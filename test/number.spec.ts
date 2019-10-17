@@ -5,7 +5,7 @@ describe("pow", function() {
 
     describe("возводит x в степень 3", function() {
 
-        function makeTest(x) {
+        function makeTest(x: any) {
             let expected = x * x * x;
             it(`${x} в степени 3 будет ${expected}`, function() {
                 assert.equal(pow(x, 3), expected);
